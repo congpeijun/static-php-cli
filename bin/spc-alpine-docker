@@ -57,7 +57,7 @@ FROM $ALPINE_FROM
 $SPC_USE_MIRROR
 RUN apk update
 RUN apk add bash file wget cmake gcc g++ jq autoconf git libstdc++ linux-headers make m4 libgcc binutils bison flex pkgconfig automake curl
-RUN apk add build-base xz php81 php81-common php81-pcntl php81-tokenizer php81-phar php81-posix php81-xml composer
+RUN apk add build-base xz php82 php82-common php82-pcntl php82-tokenizer php82-phar php82-posix php82-xml composer
 RUN mkdir /app
 WORKDIR /app
 ADD ./src /app/src
